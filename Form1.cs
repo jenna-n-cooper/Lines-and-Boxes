@@ -5,6 +5,13 @@ namespace Lines_and_Boxes
         public Form1()
         {
             InitializeComponent();
+            
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            CircleButton circleButton = new CircleButton();
+            this.Controls.Add(circleButton);
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Lines_and_Boxes
 {
-    public partial class Form1
+    partial class Form1
     {
         /// <summary>
         ///  Required designer variable.
@@ -26,41 +26,37 @@
         ///  Required method for Designer support - do not modify
         ///  the contents of this method with the code editor.
         /// </summary>
-        
-      /* private void InitializeComponent()
+        private void InitializeComponent()
         {
-            circleButton1 = new CircleButton();
+            button1 = new Button();
             SuspendLayout();
             // 
-            // circleButton1
+            // button1
             // 
-            circleButton1.BackColor = Color.Black;
-            circleButton1.Location = new Point(12, 12);
-            circleButton1.Name = "circleButton1";
-            circleButton1.Size = new Size(40, 40);
-            circleButton1.TabIndex = 1;
-            circleButton1.Text = "circleButton1";
-            circleButton1.UseVisualStyleBackColor = false;
+            button1.Location = new Point(607, 87);
+            button1.Name = "button1";
+            button1.Size = new Size(112, 34);
+            button1.TabIndex = 0;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(637, 450);
-            Controls.Add(circleButton1);
+            ClientSize = new Size(800, 450);
+            Controls.Add(button1);
             Name = "Form1";
-            Text = "Lines and Boxes";
+            Text = "Form1";
+            Load += Form1_Load;
             ResumeLayout(false);
         }
-        */
-        #endregion
-        private CircleButton[,] CircleButtonArray;
-        private CircleButton circleButton1;
 
-        public Form1()
-        {//change this so that we replace our new function with Initialize Component, keeping the same things
-           // InitializeComponent();//figure out how to initialize CircleButtonArray in the implementation
-            InitializeCircleButtonArray();
-        }
+
+        #endregion
+
+        private Button button1;
+
     }
+
 }
